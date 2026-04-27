@@ -3,32 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timmy Chen</title>
-
+  <title>陳歆茹的作品集</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* 作品項目卡片化樣式 */
+    .portfolio-item {
+      border-top: 1px solid #E2E8F0;
+      padding-top: 20px;
+      margin-top: 10px;
+    }
+
+    .item-title {
+      font-size: 1.25rem;
+      color: #1A202C;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .item-tags {
+      margin: 15px 0;
+    }
+
+    .item-tags span {
+      background: #f1f5f9;
+      color: #64748b;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.85rem;
+      margin-right: 8px;
+      border: 1px solid #e2e8f0;
+      display: inline-block;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-logo"Timmy</div>
+      <a href="#" class="nav-logo">陳歆茹的作品集</a>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#experience">學習經歷</a>
+        <a href="#portfolio">作品</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-container">
       <h1 class="hero-title">Timmy Chen</h1>
-      <p class="hero-subtitle">
-        法律 × 思辨 × 書寫
-      </p>
-
+      <p class="hero-subtitle">法律 × 思辨 × 書寫</p>
       <div class="hero-buttons">
         <a href="#about" class="btn btn-primary">View Work</a>
         <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -36,27 +63,61 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="about">
     <div class="section-container">
-      <h2 class="section-title">About</h2>
-      <p class="about-text">
-        我就讀於國立台北大學法律系財經法學組四年級，專注於民事訴訟、消費者保護法及性別人權領域。
-        除了法律學術研究，也關注哲學與社會議題，擅長以提問與對話梳理邏輯與論點。
-        曾修習消費者保護法課程及律師事務所實習課程。
-      </p>
+      <div class="card">
+        <h2 class="section-title">About</h2>
+        <p class="about-text">
+          我就讀於國立台北大學法律系財經法學組四年級，專注於民事訴訟、消費者保護法及性別人權領域。
+          除了法律學術研究，也關注哲學與社會議題，擅長以提問與對話梳理邏輯與論點。
+          曾修習消費者保護法課程及律師事務所實習課程。
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <section id="experience" class="experience">
+    <div class="section-container">
+      <div class="card">
+        <h2 class="section-title">學習經歷</h2>
+        <p class="about-text">除法律系基本課程外，尚參與以下選修課程與活動：</p>
+        <ul class="experience-list">
+          <li>消費者保護法</li>
+          <li>性別與法律</li>
+          <li>澄觀法律事務所實習</li>
+          <li>國際法學社舉辦之鳶政盃競賽</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="section-container">
+      <div class="card">
+        <h2 class="section-title">作品</h2>
+        <div class="portfolio-item">
+          <h3 class="item-title">消費者保護法期末報告：消費者保護法與公平交易法下的不實廣告</h3>
+          <p class="about-text">
+            此報告針對我國消保法》與《公平法》對不實廣告的規範進行深度分析。探討不實廣告的構成要件（如虛偽不實或引人錯誤之表示，並引用「冠德建設案」與「理科太太太空人維他命爭議」等實務案例，反思行政機關在案件裁罰與資訊揭露上的現況。
+          </p>
+          <div class="item-tags">
+            <span>法律研究</span>
+            <span>消費者保護法</span>
+            <span>實務案例分析</span>
+          </div>
+          <a href="消保法期末書面報告 411171616財法三陳歆茹.pdf" target="_blank" class="btn btn-secondary" style="margin-top: 15px; display: inline-block;">查看報告全文</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
     <div class="section-container">
       <h2 class="section-title">Contact</h2>
-
       <div class="contact-list">
-        <p>Email: <a href="mailto:your@email.com">timmychen1129@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/" target="_blank">github.com/timmychen</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/" target="_blank">linkedin.com/in/timmychen</a></p>
+        <p>Email: <a href="mailto:timmychen1129@gmail.com">timmychen1129@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/timmychen" target="_blank">github.com/timmychen</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/timmychen" target="_blank">linkedin.com/in/timmychen</a></p>
       </div>
     </div>
   </section>
