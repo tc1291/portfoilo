@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  /* 引入襯線體字型，例如 Playfair Display 或 Noto Serif TC */
+  font-family: "Playfair Display", "Noto Serif TC", serif; 
+  background-color: #FDFCF0; /* 溫潤的象牙白，像舊書頁 */
+  color: #2C3E50;           /* 深石板灰代替純黑 */
+  line-height: 1.8;         /* 法律長文需要的行高 */
+}
+
+/* Layout */
+.section-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(253, 252, 240, 0.95);
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: #1A202C;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #334155;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #0ea5e9;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1A202C;
+  letter-spacing: -1px; /* 緊湊的標題更顯專業 */
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  border-radius: 2px; /* 法律人不需要太圓潤的設計 */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0284c7;
+}
+
+.btn-secondary {
+  border: 1px solid #0ea5e9;
+  color: #0ea5e9;
+}
+
+.btn-secondary:hover {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+/* Sections */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: #475569;
+}
+
+/* Contact */
+.contact-list p {
+  margin-bottom: 10px;
+}
+
+.contact-list a {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
